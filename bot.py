@@ -1,7 +1,7 @@
 from telebot import types
 import time
 import telebot
-bot = telebot.TeleBot("")
+bot = telebot.TeleBot("1131840492:AAGn8YqEPd_5Jmi-4nkUSq8hjjHdklnSk9U")
 
 def inline_gde():
     key = types.InlineKeyboardMarkup()
@@ -40,7 +40,7 @@ def inline_keybordtwo ():
 
 @bot.message_handler(commands=["start"])
 def inline(message):
-	bot.send_message(message.chat.id, "Вас приветствует магазин KILLER DILLER\n\nTelegram: TKD24_7KD\n\nУдачных покупок!\n\nДля покупки нажмите свой город из списка снизу:", reply_markup=inline_gde())
+	bot.send_message(message.chat.id, "Вас приветствует магазин KILLER DILLER\n\nTelegram: @TKD197\n\nУдачных покупок!\n\nДля покупки нажмите свой город из списка снизу:", reply_markup=inline_gde())
 
 @bot.callback_query_handler(func=lambda c:True)
 def inlin(c):
@@ -136,7 +136,7 @@ def inlin(c):
         bot.edit_message_text(
             chat_id=c.message.chat.id,
             message_id=c.message.message_id,
-            text="Переведите на Пополнить баланс через Qiwi в течение 3 часов\n➖➖➖➖➖➖➖➖➖➖\nКошелек: ➡️79539133987⬅️\nСумма: рублей\n\n➖➖➖➖➖➖➖➖➖➖\n❗️Оплата неточной суммы - потеря вашего платежа.❗️/n❗️ОПЛАТАРУБЛЬ В РУБЛЬ❗️\n❗️Оплата только ОДНОЙ суммой (сборные суммы не принимаем)❗️",
+            text="Переведите на Пополнить баланс через Qiwi в течение 3 часов\n➖➖➖➖➖➖➖➖➖➖\nКошелек: ➡️+79854241309⬅️\nСумма: рублей\n\n➖➖➖➖➖➖➖➖➖➖\n❗️Оплата неточной суммы - потеря вашего платежа.❗️/n❗️ОПЛАТАРУБЛЬ В РУБЛЬ❗️\n❗️Оплата только ОДНОЙ суммой (сборные суммы не принимаем)❗️",
             parse_mode="markdown",
             reply_markup=inline_keybordtwo ())  
     elif c.data=='check':

@@ -1,7 +1,7 @@
 from telebot import types
 import time
 import telebot
-bot = telebot.TeleBot("1131840492:AAGn8YqEPd_5Jmi-4nkUSq8hjjHdklnSk9U")
+bot = telebot.TeleBot("1100991800:AAF1-5a4opT2PXapER279RRfjcTtKWhp-fs")
 
 def inline_gde():
     key = types.InlineKeyboardMarkup()

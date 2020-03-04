@@ -40,7 +40,7 @@ def inline_keybordtwo ():
 
 @bot.message_handler(commands=["start"])
 def inline(message):
-	bot.send_message(message.chat.id, "Вас приветствует магазин KILLER DILLER\n\nTelegram: @TKD197\n\nУдачных покупок!\n\nДля покупки нажмите свой город из списка снизу:", reply_markup=inline_gde())
+	bot.send_message(message.chat.id, "Вас приветствует магазин KILLER DILLER\n\nTelegram: @TKD24777\n\nУдачных покупок!\n\nДля покупки нажмите свой город из списка снизу:", reply_markup=inline_gde())
 
 @bot.callback_query_handler(func=lambda c:True)
 def inlin(c):
